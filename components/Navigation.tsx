@@ -52,7 +52,8 @@ export default function Navigation() {
           <div className="md:hidden">
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="text-inkMuted hover:text-ink focus:outline-none focus:text-ink"
+              className="text-ink hover:text-primary focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 rounded-lg p-2 transition-colors"
+              aria-label="Toggle mobile menu"
             >
               <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 {isMenuOpen ? (
@@ -67,18 +68,18 @@ export default function Navigation() {
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="md:hidden">
-            <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 border-t border-line">
+          <div className="md:hidden absolute top-16 left-0 right-0 bg-surfaceAlt border-b border-line shadow-lg z-40">
+            <div className="px-4 pt-4 pb-6 space-y-2">
               <Link 
                 href="/" 
-                className="text-inkMuted hover:text-ink block px-3 py-2 text-base font-medium"
+                className="text-inkMuted hover:text-ink hover:bg-surface block px-4 py-3 text-base font-medium rounded-lg transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Home
               </Link>
               <Link 
                 href="#faq" 
-                className="text-inkMuted hover:text-ink block px-3 py-2 text-base font-medium"
+                className="text-inkMuted hover:text-ink hover:bg-surface block px-4 py-3 text-base font-medium rounded-lg transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
                 FAQ
