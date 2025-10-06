@@ -86,3 +86,7 @@ MIT License - feel free to use this project for your own redundancy calculator a
 ## Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
+
+## Deployment
+
+This project is deployed on Vercel and automatically updates when changes are pushed to the main branch.
