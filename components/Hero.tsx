@@ -1,6 +1,11 @@
 import RedundancyCalculator from './Calculator';
+import { County } from '@/lib/countiesIE';
 
-export default function Hero() {
+interface HeroProps {
+  county?: County;
+}
+
+export default function Hero({ county }: HeroProps) {
   return (
     <section className="section-spacing bg-wash">
       <div className="page-wrap">
@@ -12,14 +17,14 @@ export default function Hero() {
                 Calculate your redundancy payment
               </h1>
               <div className="text-2xl md:text-3xl font-bold text-ink mb-4">
-                Ireland
+                {county ? `${county.name}, Ireland` : 'Ireland'}
               </div>
               <p className="text-base text-inkMuted leading-relaxed mb-4">
                 Whether you've worked 2 years or 20 years, understanding your redundancy rights shouldn't be complicated. 
-                Our calculator helps you estimate your statutory redundancy payment under Irish law.
+                Our calculator helps you estimate your statutory redundancy payment under Irish law{county ? ` in ${county.name}` : ''}.
               </p>
               <p className="text-sm text-inkMuted leading-relaxed mb-6">
-                Try our calculator to see exactly how much you're entitled to based on current legislation.
+                Try our calculator to see exactly how much you're entitled to based on current legislation{county ? ` for employees in ${county.name}` : ''}.
               </p>
             </div>
             

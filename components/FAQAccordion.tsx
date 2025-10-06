@@ -2,23 +2,24 @@
 
 import { useState } from 'react';
 import { ChevronDown, ChevronUp } from 'lucide-react';
+import { County } from '@/lib/countiesIE';
 
 interface FAQItem {
   question: string;
   answer: string;
 }
 
-const faqData: FAQItem[] = [
+const getFaqData = (county?: County): FAQItem[] => [
   {
-    question: "Who qualifies for redundancy payment in Ireland?",
-    answer: "Employees with at least 2 years of continuous service with the same employer are entitled to statutory redundancy payment under Irish law. This includes full-time, part-time, and temporary employees."
+    question: `Who qualifies for redundancy payment in ${county ? county.name : 'Ireland'}?`,
+    answer: `Employees with at least 2 years of continuous service with the same employer are entitled to statutory redundancy payment under Irish law. This includes full-time, part-time, and temporary employees${county ? ` working in ${county.name}` : ''}.`
   },
   {
     question: "How is statutory redundancy calculated in Ireland?",
     answer: "The calculation is based on 2 weeks' pay for each year of service plus 1 additional week's pay. The weekly wage is capped at €600. For example, 5 years of service = (5 × 2 + 1) × €600 = €6,600."
   },
   {
-    question: "Is redundancy payment taxable in Ireland?",
+    question: `Is redundancy payment taxable in ${county ? county.name : 'Ireland'}?`,
     answer: "The first €10,160 of redundancy payment is tax-free. Any amount above this threshold is subject to income tax, PRSI, and USC at your normal rates."
   },
   {
@@ -30,13 +31,18 @@ const faqData: FAQItem[] = [
     answer: "No, statutory redundancy payment is only available when you are made redundant by your employer. If you resign voluntarily, you are not entitled to redundancy payment."
   },
   {
-    question: "What if my employer doesn't pay redundancy?",
+    question: `What if my employer in ${county ? county.name : 'Ireland'} doesn't pay redundancy?`,
     answer: "If your employer refuses to pay statutory redundancy, you can make a claim to the Workplace Relations Commission (WRC). You have 6 months from the date of dismissal to make a claim."
   }
 ];
 
-export default function FAQAccordion() {
+interface FAQAccordionProps {
+  county?: County;
+}
+
+export default function FAQAccordion({ county }: FAQAccordionProps) {
   const [openItems, setOpenItems] = useState<number[]>([]);
+  const faqData = getFaqData(county);
 
   const toggleItem = (index: number) => {
     setOpenItems(prev => 
