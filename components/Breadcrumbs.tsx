@@ -26,9 +26,9 @@ export default function Breadcrumbs({ items }: BreadcrumbsProps) {
     return () => window.removeEventListener('resize', checkMobile);
   }, []);
 
-  // For mobile, show only last 2 items + home
+  // For mobile, show only last 2 items + home (no ellipsis needed)
   const displayItems = isMobile && items.length > 3 
-    ? [items[0], { label: '...', href: undefined }, ...items.slice(-2)]
+    ? [items[0], ...items.slice(-2)]
     : items;
 
   return (
@@ -47,8 +47,6 @@ export default function Breadcrumbs({ items }: BreadcrumbsProps) {
                 <Home className="h-3 w-3 md:h-4 md:w-4 mr-1" />
                 <span className="hidden sm:inline">Home</span>
               </Link>
-            ) : item.label === '...' ? (
-              <span className="text-inkMuted px-1">...</span>
             ) : item.href ? (
               <Link 
                 href={item.href} 
