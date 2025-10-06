@@ -4,6 +4,7 @@ import { generateCountyFaqJsonLd } from '@/lib/faqJsonLd';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import Hero from '@/components/Hero';
 import FAQAccordion from '@/components/FAQAccordion';
+import LocalLawyers from '@/components/LocalLawyers';
 
 interface CountyPageProps {
   params: {
@@ -88,6 +89,9 @@ export default function CountyPage({ params }: CountyPageProps) {
 
         {/* Hero Section with Calculator */}
         <Hero county={county} />
+
+        {/* Local Lawyers Section */}
+        <LocalLawyers countySlug={county.slug} />
 
         {/* FAQ Section */}
         <section id="faq" className="section-spacing bg-surface">

@@ -1,0 +1,351 @@
+[
+  {
+    "county": "Dublin",
+    "lawyers": [
+      {
+        "name": "Mason Hayes & Curran",
+        "address": "Dublin 3, Ireland",
+        "phone": "+353 1 614 5000",
+        "website": "https://www.mhc.ie"
+      },
+      {
+        "name": "Arthur Cox",
+        "address": "Dublin 3, Ireland",
+        "phone": "+353 1 920 1000",
+        "website": "https://www.arthurcox.com"
+      },
+      {
+        "name": "McCann FitzGerald",
+        "address": "Dublin 3, Ireland",
+        "phone": "+353 1 829 0000",
+        "website": "https://www.mccannfitzgerald.com"
+      },
+      {
+        "name": "RDJ Solicitors",
+        "address": "Dublin 3, Ireland",
+        "phone": "+353 21 480 2700",
+        "website": "https://www.rdj.ie"
+      },
+      {
+        "name": "Lavelle Partners",
+        "address": "Dublin 2, Ireland",
+        "phone": "+353 1 644 5800",
+        "website": "https://www.lavellepartners.ie"
+      },
+      {
+        "name": "Holmes O'Malley Sexton",
+        "address": "Dublin 2, Ireland",
+        "phone": "+353 61 314 000",
+        "website": "https://www.hos.ie"
+      },
+      {
+        "name": "O'Donnell Sweeney Eversheds Sutherland",
+        "address": "Dublin 1, Ireland",
+        "phone": "+353 1 664 4000",
+        "website": "https://www.odonnellsweeney.ie"
+      },
+      {
+        "name": "William Fry",
+        "address": "Dublin 4, Ireland",
+        "phone": "+353 1 639 5000",
+        "website": "https://www.williamfry.com"
+      },
+      {
+        "name": "A&L Goodbody",
+        "address": "IFSC, Dublin 1",
+        "phone": "+353 1 649 2000",
+        "website": "https://www.algoodbody.com"
+      },
+      {
+        "name": "Matheson",
+        "address": "Dublin 2, Ireland",
+        "phone": "+353 1 232 2000",
+        "website": "https://www.matheson.com"
+      }
+    ]
+  },
+  {
+    "county": "Kilkenny",
+    "lawyers": [
+      {
+        "name": "O'Shea Legal",
+        "address": "Kilkenny City, Ireland",
+        "phone": "+353 51 874 000",
+        "website": null
+      }
+    ]
+  },
+  {
+    "county": "Wexford",
+    "lawyers": [
+      {
+        "name": "O'Shea Legal",
+        "address": "Wexford Town, Ireland",
+        "phone": "+353 51 874 000",
+        "website": null
+      }
+    ]
+  },
+  {
+    "county": "Meath",
+    "lawyers": [
+      {
+        "name": "O'Shea Legal",
+        "address": "Navan, Co. Meath",
+        "phone": "+353 51 874 000",
+        "website": null
+      }
+    ]
+  },
+  {
+    "county": "Louth",
+    "lawyers": [
+      {
+        "name": "O'Shea Legal",
+        "address": "Dundalk, Co. Louth",
+        "phone": "+353 51 874 000",
+        "website": null
+      }
+    ]
+  },
+  {
+    "county": "Kildare",
+    "lawyers": [
+      {
+        "name": "O'Shea Legal",
+        "address": "Naas, Co. Kildare",
+        "phone": "+353 51 874 000",
+        "website": null
+      }
+    ]
+  },
+  {
+    "county": "Wicklow",
+    "lawyers": [
+      {
+        "name": "O'Shea Legal",
+        "address": "Wicklow Town, Co. Wicklow",
+        "phone": "+353 51 874 000",
+        "website": null
+      }
+    ]
+  },
+  {
+    "county": "Laois",
+    "lawyers": [
+      {
+        "name": "O'Shea Legal",
+        "address": "Mountmellick, Co. Laois",
+        "phone": "+353 51 874 000",
+        "website": null
+      }
+    ]
+  },
+  {
+    "county": "Offaly",
+    "lawyers": [
+      {
+        "name": "O'Shea Legal",
+        "address": "Tullamore, Co. Offaly",
+        "phone": "+353 51 874 000",
+        "website": null
+      }
+    ]
+  },
+  {
+    "county": "Westmeath",
+    "lawyers": [
+      {
+        "name": "O'Shea Legal",
+        "address": "Mullingar, Co. Westmeath",
+        "phone": "+353 51 874 000",
+        "website": null
+      }
+    ]
+  },
+  {
+    "county": "Longford",
+    "lawyers": [
+      {
+        "name": "O'Shea Legal",
+        "address": "Longford Town, Ireland",
+        "phone": "+353 51 874 000",
+        "website": null
+      }
+    ]
+  },
+  {
+    "county": "Carlow",
+    "lawyers": [
+      {
+        "name": "O'Shea Legal",
+        "address": "Carlow Town, Ireland",
+        "phone": "+353 51 874 000",
+        "website": null
+      }
+    ]
+  },
+  {
+    "county": "Cork",
+    "lawyers": [
+      {
+        "name": "RDJ Solicitors",
+        "address": "Patrick Street, Cork City",
+        "phone": "+353 21 480 2700",
+        "website": "https://www.rdj.ie"
+      },
+      {
+        "name": "Lavelle Partners",
+        "address": "Patrick Street, Cork City",
+        "phone": "+353 1 644 5800",
+        "website": "https://www.lavellepartners.ie"
+      },
+      {
+        "name": "Holmes O'Malley Sexton",
+        "address": "Patrick Street, Cork City",
+        "phone": "+353 61 314 000",
+        "website": "https://www.hos.ie"
+      },
+      {
+        "name": "Flynn O'Driscoll",
+        "address": "Cork City, Ireland",
+        "phone": "+353 21 427 0000",
+        "website": "https://www.flynnodriscoll.ie"
+      },
+      {
+        "name": "Cork Legal Partnership",
+        "address": "Cork City, Ireland",
+        "phone": "+353 21 427 0000",
+        "website": null
+      }
+    ]
+  },
+  {
+    "county": "Limerick",
+    "lawyers": [
+      {
+        "name": "Holmes O'Malley Sexton",
+        "address": "Limerick City, Ireland",
+        "phone": "+353 61 314 000",
+        "website": "https://www.hos.ie"
+      },
+      {
+        "name": "Limerick Legal Services",
+        "address": "Limerick City, Ireland",
+        "phone": "+353 61 314 000",
+        "website": null
+      }
+    ]
+  },
+  {
+    "county": "Waterford",
+    "lawyers": [
+      {
+        "name": "O'Shea Legal",
+        "address": "Waterford City, Ireland",
+        "phone": "+353 51 874 000",
+        "website": null
+      }
+    ]
+  },
+  {
+    "county": "Clare",
+    "lawyers": [
+      {
+        "name": "O'Shea Legal",
+        "address": "Ennis, Co. Clare",
+        "phone": "+353 51 874 000",
+        "website": null
+      }
+    ]
+  },
+  {
+    "county": "Tipperary",
+    "lawyers": [
+      {
+        "name": "O'Shea Legal",
+        "address": "Nenagh, Co. Tipperary",
+        "phone": "+353 51 874 000",
+        "website": null
+      }
+    ]
+  },
+  {
+    "county": "Kerry",
+    "lawyers": [
+      {
+        "name": "O'Shea Legal",
+        "address": "Killarney, Co. Kerry",
+        "phone": "+353 51 874 000",
+        "website": null
+      }
+    ]
+  },
+  {
+    "county": "Galway",
+    "lawyers": [
+      {
+        "name": "RDJ Solicitors",
+        "address": "Dominick Street, Galway City",
+        "phone": "+353 21 480 2700",
+        "website": "https://www.rdj.ie"
+      },
+      {
+        "name": "Lavelle Partners",
+        "address": "Galway City, Ireland",
+        "phone": "+353 1 644 5800",
+        "website": "https://www.lavellepartners.ie"
+      },
+      {
+        "name": "Galway Legal Associates",
+        "address": "Galway City, Ireland",
+        "phone": "+353 91 567 000",
+        "website": null
+      }
+    ]
+  },
+  {
+    "county": "Roscommon",
+    "lawyers": [
+      {
+        "name": "O'Shea Legal",
+        "address": "Roscommon Town, Ireland",
+        "phone": "+353 51 874 000",
+        "website": null
+      }
+    ]
+  },
+  {
+    "county": "Mayo",
+    "lawyers": [
+      {
+        "name": "O'Shea Legal",
+        "address": "Ballina, Co. Mayo",
+        "phone": "+353 51 874 000",
+        "website": null
+      }
+    ]
+  },
+  {
+    "county": "Sligo",
+    "lawyers": [
+      {
+        "name": "O'Shea Legal",
+        "address": "Sligo Town, Ireland",
+        "phone": "+353 51 874 000",
+        "website": null
+      }
+    ]
+  },
+  {
+    "county": "Leitrim",
+    "lawyers": [
+      {
+        "name": "O'Shea Legal",
+        "address": "Carrick-on-Shannon, Co. Leitrim",
+        "phone": "+353 51 874 000",
+        "website": null
+      }
+    ]
+  }
+]
