@@ -13,7 +13,7 @@ export default function CountiesPills() {
   );
 
   return (
-    <div className="bg-surface rounded-2xl shadow-card border border-line p-6">
+    <div className="bg-surface rounded-2xl shadow-lg border border-line p-6 hover:shadow-xl transition-shadow duration-300">
       <div className="text-center mb-6">
         <h3 className="heading-3 mb-2">
           Calculate Redundancy by County
@@ -29,7 +29,7 @@ export default function CountiesPills() {
           <Link
             key={county.slug}
             href={`/en/redundancy-calculator/ireland/${county.slug}`}
-            className="inline-flex items-center px-4 py-2 bg-wash hover:bg-wash-deeper text-ink font-medium rounded-full border border-line hover:border-primary transition-all duration-200 hover:shadow-sm"
+            className="inline-flex items-center px-4 py-2 bg-wash hover:bg-wash-deeper text-ink font-medium rounded-full border-2 border-line hover:border-primary transition-all duration-200 hover:shadow-md"
           >
             <span className="text-sm">{county.name}</span>
           </Link>

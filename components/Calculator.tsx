@@ -35,7 +35,7 @@ export default function RedundancyCalculator() {
   const commission = years >= 2 ? 0 : 0; // No commission for redundancy calculation
 
   return (
-    <div className="card p-8 w-full max-w-[800px] mx-auto">
+    <div className="bg-surface rounded-2xl shadow-lg border border-line p-8 w-full max-w-[800px] mx-auto hover:shadow-xl transition-shadow duration-300">
       {/* Exchange Rate Header */}
       <div className="flex items-center space-x-2 mb-3">
         <Lock className="h-5 w-5 text-inkMuted" />
@@ -58,7 +58,7 @@ export default function RedundancyCalculator() {
               type="number"
               value={yearsOfService}
               onChange={(e) => setYearsOfService(e.target.value)}
-              className="w-full h-14 px-4 border border-line rounded-lg focus:ring-2 focus:ring-primary focus:border-primary transition-colors text-base"
+              className="w-full h-14 px-4 border-2 border-ink rounded-lg focus:ring-2 focus:ring-primary focus:border-primary transition-all duration-200 text-base bg-white shadow-sm hover:shadow-md"
               placeholder="Enter years"
               min="0"
               step="0.5"
@@ -79,7 +79,7 @@ export default function RedundancyCalculator() {
               type="number"
               value={weeklyWage}
               onChange={(e) => setWeeklyWage(e.target.value)}
-              className="w-full h-14 pl-14 pr-4 border border-line rounded-lg focus:ring-2 focus:ring-primary focus:border-primary transition-colors text-base"
+              className="w-full h-14 pl-14 pr-4 border-2 border-ink rounded-lg focus:ring-2 focus:ring-primary focus:border-primary transition-all duration-200 text-base bg-white shadow-sm hover:shadow-md"
               placeholder="Enter weekly wage"
               min="0"
               step="0.01"
@@ -109,7 +109,7 @@ export default function RedundancyCalculator() {
             <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
               <span className="text-inkMuted text-base font-medium">EUR</span>
             </div>
-            <div className="w-full h-14 pl-14 pr-4 border border-line rounded-lg bg-wash flex items-center">
+            <div className="w-full h-14 pl-14 pr-4 border-2 border-ink rounded-lg bg-wash flex items-center shadow-sm">
               <span className="text-lg font-semibold text-ink">
                 {years >= 2 ? formatCurrency(totalAmount) : 'Not eligible'}
               </span>
@@ -123,10 +123,10 @@ export default function RedundancyCalculator() {
             Eligibility status
           </label>
           <div className="flex items-center h-14">
-            <div className={`px-4 py-2 rounded-full text-base font-medium ${
+            <div className={`px-4 py-2 rounded-full text-base font-medium shadow-sm ${
               years >= 2 
-                ? 'bg-green-100 text-green-800 border border-green-200' 
-                : 'bg-red-100 text-red-800 border border-red-200'
+                ? 'bg-green-100 text-green-800 border-2 border-green-300' 
+                : 'bg-red-100 text-red-800 border-2 border-red-300'
             }`}>
               {years >= 2 ? 'Eligible' : 'Not eligible (minimum 2 years required)'}
             </div>
@@ -136,8 +136,8 @@ export default function RedundancyCalculator() {
 
       {/* Breakdown */}
       {years >= 2 && (
-        <div className="space-y-2 text-sm">
-          <div className="flex justify-between items-center py-2 border-b border-line">
+        <div className="space-y-2 text-sm bg-gray-50 rounded-lg p-4 border border-line">
+          <div className="flex justify-between items-center py-2 border-b border-gray-200">
             <span className="text-inkMuted">
               {years} years × 2 weeks × {formatCurrency(cappedWage)}
             </span>
@@ -145,7 +145,7 @@ export default function RedundancyCalculator() {
               {formatCurrency(years * 2 * cappedWage)}
             </span>
           </div>
-          <div className="flex justify-between items-center py-2 border-b border-line">
+          <div className="flex justify-between items-center py-2 border-b border-gray-200">
             <span className="text-inkMuted">
               + 1 additional week × {formatCurrency(cappedWage)}
             </span>
@@ -168,8 +168,8 @@ export default function RedundancyCalculator() {
 
       {/* Savings info */}
       {years >= 2 && (
-        <div className="mt-4 p-3 bg-green-50 border border-green-200 rounded-lg">
-          <div className="text-sm text-green-800">
+        <div className="mt-4 p-4 bg-green-50 border-2 border-green-200 rounded-lg shadow-sm">
+          <div className="text-sm text-green-800 font-medium">
             <strong>Based on current Irish legislation</strong>
           </div>
           <div className="text-xs text-green-700 mt-1">
