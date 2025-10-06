@@ -93,7 +93,7 @@ export default function LocalLawyers({ countySlug }: LocalLawyersProps) {
                 </div>
               )}
 
-              {/* Botón de consulta */}
+              {/* Botón de consulta/llamada */}
               {lawyer.website ? (
                 <button
                   className="w-full btn-primary text-sm py-3"
@@ -104,13 +104,20 @@ export default function LocalLawyers({ countySlug }: LocalLawyersProps) {
                 >
                   Request Consultation
                 </button>
+              ) : lawyer.phone ? (
+                <a
+                  href={`tel:${lawyer.phone}`}
+                  className="w-full btn-primary text-sm py-3 text-center block"
+                >
+                  📞 Call Now
+                </a>
               ) : (
                 <button
                   className="w-full bg-inkMuted text-surface text-sm py-3 rounded-lg cursor-not-allowed opacity-60"
                   disabled
-                  title="Website not available for consultation requests"
+                  title="No contact information available"
                 >
-                  Request Consultation
+                  Contact Unavailable
                 </button>
               )}
             </div>
