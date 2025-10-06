@@ -1,37 +1,39 @@
-import StatusChips from './StatusChips';
 import RedundancyCalculator from './Calculator';
-import FeatureStrip from './FeatureStrip';
 
 export default function Hero() {
-  const statusChips = [
-    { text: 'Statutory cap €600 / week' },
-    { text: 'Based on Redundancy Payments Acts 1967–2014' }
-  ];
-
   return (
     <section className="section-spacing bg-wash">
       <div className="page-wrap">
-        {/* Headline Stack */}
-        <div className="text-center mb-12">
-          <h1 className="heading-1 mb-4">
-            Redundancy Pay Calculator
-          </h1>
-          <div className="text-2xl md:text-3xl font-bold text-primary mb-4">
-            Ireland
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-start">
+          {/* Left Column - Marketing Content */}
+          <div className="lg:col-span-2 space-y-6">
+            <div>
+              <h1 className="heading-1 mb-4">
+                Calculate your redundancy payment
+              </h1>
+              <div className="text-2xl md:text-3xl font-bold text-primary mb-6">
+                Ireland
+              </div>
+              <p className="text-lg text-inkMuted leading-relaxed mb-6">
+                Whether you've worked 2 years or 20 years, understanding your redundancy rights shouldn't be complicated. 
+                Our calculator helps you estimate your statutory redundancy payment under Irish law, with no hidden fees or complex terms.
+              </p>
+              <p className="text-inkMuted leading-relaxed mb-8">
+                Try our calculator to see exactly how much you're entitled to based on current legislation. 
+                Get instant, accurate estimates based on the Redundancy Payments Acts 1967–2014.
+              </p>
+            </div>
+            
+            <button className="bg-primary hover:bg-primaryDark text-white font-semibold px-8 py-4 rounded-lg transition-colors">
+              Discover your redundancy rights
+            </button>
           </div>
-          <p className="text-lg text-inkMuted max-w-2xl mx-auto">
-            Quickly estimate your statutory redundancy payment under Irish law.
-          </p>
+
+          {/* Right Column - Calculator */}
+          <div className="lg:col-span-1">
+            <RedundancyCalculator />
+          </div>
         </div>
-
-        {/* Status Chips */}
-        <StatusChips items={statusChips} />
-
-        {/* Calculator Card */}
-        <RedundancyCalculator />
-
-        {/* Feature Strip */}
-        <FeatureStrip />
       </div>
     </section>
   );
