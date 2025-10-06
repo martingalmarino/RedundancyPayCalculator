@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { Calculator, TrendingUp } from 'lucide-react';
+import { TrendingUp } from 'lucide-react';
 
 export default function Footer() {
   return (
@@ -11,15 +11,12 @@ export default function Footer() {
             <div className="flex items-center space-x-2 mb-4">
               <div className="relative">
                 <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
-                  <Calculator className="h-5 w-5 text-cta" />
-                </div>
-                <div className="absolute -top-1 -right-1 w-3 h-3 bg-success rounded-full flex items-center justify-center">
-                  <TrendingUp className="h-2 w-2 text-white" />
+                  <TrendingUp className="h-5 w-5 text-cta" />
                 </div>
               </div>
               <div className="flex flex-col">
-                <span className="text-lg font-bold text-ink leading-tight">
-                  RedundancyCalc
+                <span className="text-xl font-bold text-ink leading-tight">
+                  ExitPayout.com
                 </span>
                 <span className="text-xs text-inkMuted leading-tight">
                   Ireland

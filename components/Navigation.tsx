@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { useState } from 'react';
-import { Calculator, TrendingUp } from 'lucide-react';
+import { TrendingUp } from 'lucide-react';
 
 export default function Navigation() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -16,15 +16,12 @@ export default function Navigation() {
             <Link href="/" className="flex items-center space-x-2 group">
               <div className="relative">
                 <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center group-hover:bg-primaryDark transition-colors">
-                  <Calculator className="h-5 w-5 text-cta" />
-                </div>
-                <div className="absolute -top-1 -right-1 w-3 h-3 bg-success rounded-full flex items-center justify-center">
-                  <TrendingUp className="h-2 w-2 text-white" />
+                  <TrendingUp className="h-5 w-5 text-cta" />
                 </div>
               </div>
               <div className="flex flex-col">
-                <span className="text-lg font-bold text-ink group-hover:text-primary transition-colors leading-tight">
-                  RedundancyCalc
+                <span className="text-xl font-bold text-ink group-hover:text-primary transition-colors leading-tight">
+                  ExitPayout.com
                 </span>
                 <span className="text-xs text-inkMuted leading-tight">
                   Ireland
