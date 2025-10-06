@@ -35,7 +35,7 @@ export default function FeatureStrip() {
       {features.map((feature, index) => (
         <div key={index} className="card-small p-4 text-center hover:shadow-lg transition-shadow">
           <div className="inline-flex items-center justify-center w-10 h-10 bg-wash rounded-full mb-3">
-            <feature.icon className="h-5 w-5 text-primary" />
+            <feature.icon className="h-5 w-5 text-ink" />
           </div>
           <h3 className="text-sm font-semibold text-ink mb-1">
             {feature.title}

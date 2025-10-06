@@ -11,13 +11,14 @@ module.exports = {
         sans: ['Inter', 'ui-sans-serif', 'system-ui'],
       },
       colors: {
-        primary: '#1E40AF',
-        primaryDark: '#1E3A8A',
+        primary: '#163300',
+        primaryDark: '#0F2200',
         success: '#16A34A',
-        ink: '#1F2937',
+        ink: '#000000',
         inkMuted: '#4B5563',
         line: '#E5E7EB',
         surface: '#FFFFFF',
+        cta: '#9FE870',
         wash: {
           DEFAULT: '#9FE870',
           deeper: '#8FD85F',

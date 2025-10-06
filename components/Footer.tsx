@@ -21,12 +21,12 @@ export default function Footer() {
             </h4>
             <ul className="space-y-2">
               <li>
-                <Link href="/" className="text-inkMuted hover:text-primary text-sm transition-colors">
+                <Link href="/" className="text-inkMuted hover:text-ink text-sm transition-colors">
                   Home
                 </Link>
               </li>
               <li>
-                <Link href="#faq" className="text-inkMuted hover:text-primary text-sm transition-colors">
+                <Link href="#faq" className="text-inkMuted hover:text-ink text-sm transition-colors">
                   FAQ
                 </Link>
               </li>
@@ -40,12 +40,12 @@ export default function Footer() {
             </h4>
             <ul className="space-y-2">
               <li>
-                <Link href="/privacy" className="text-inkMuted hover:text-primary text-sm transition-colors">
+                <Link href="/privacy" className="text-inkMuted hover:text-ink text-sm transition-colors">
                   Privacy Policy
                 </Link>
               </li>
               <li>
-                <Link href="/disclaimer" className="text-inkMuted hover:text-primary text-sm transition-colors">
+                <Link href="/disclaimer" className="text-inkMuted hover:text-ink text-sm transition-colors">
                   Disclaimer
                 </Link>
               </li>

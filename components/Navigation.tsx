@@ -12,7 +12,7 @@ export default function Navigation() {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <Link href="/" className="text-xl font-bold text-primary">
+            <Link href="/" className="text-xl font-bold text-ink">
               RedundancyCalc
             </Link>
           </div>
@@ -22,13 +22,13 @@ export default function Navigation() {
             <div className="ml-10 flex items-baseline space-x-8">
               <Link 
                 href="/" 
-                className="text-inkMuted hover:text-primary px-3 py-2 text-sm font-medium transition-colors"
+                className="text-inkMuted hover:text-ink px-3 py-2 text-sm font-medium transition-colors"
               >
                 Home
               </Link>
               <Link 
                 href="#faq" 
-                className="text-inkMuted hover:text-primary px-3 py-2 text-sm font-medium transition-colors"
+                className="text-inkMuted hover:text-ink px-3 py-2 text-sm font-medium transition-colors"
               >
                 FAQ
               </Link>
@@ -39,7 +39,7 @@ export default function Navigation() {
           <div className="md:hidden">
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="text-inkMuted hover:text-primary focus:outline-none focus:text-primary"
+              className="text-inkMuted hover:text-ink focus:outline-none focus:text-ink"
             >
               <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 {isMenuOpen ? (
@@ -58,14 +58,14 @@ export default function Navigation() {
             <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 border-t border-line">
               <Link 
                 href="/" 
-                className="text-inkMuted hover:text-primary block px-3 py-2 text-base font-medium"
+                className="text-inkMuted hover:text-ink block px-3 py-2 text-base font-medium"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Home
               </Link>
               <Link 
                 href="#faq" 
-                className="text-inkMuted hover:text-primary block px-3 py-2 text-base font-medium"
+                className="text-inkMuted hover:text-ink block px-3 py-2 text-base font-medium"
                 onClick={() => setIsMenuOpen(false)}
               >
                 FAQ
