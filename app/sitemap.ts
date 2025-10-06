@@ -2,7 +2,7 @@ import { MetadataRoute } from 'next';
 import { countiesIE } from '@/lib/countiesIE';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://redundancycalc.ie'; // Replace with your actual domain
+  const baseUrl = 'https://www.exitpayout.com';
   
   // Static pages
   const staticPages = [

@@ -26,16 +26,23 @@ export async function generateMetadata({ params }: CountyPageProps): Promise<Met
     };
   }
 
+  const canonicalUrl = `https://www.exitpayout.com/en/redundancy-calculator/ireland/${county.slug}`;
+
   return {
     title: `Redundancy Pay Calculator - ${county.name} | Calculate Your Statutory Redundancy`,
     description: `Calculate your statutory redundancy payment in ${county.name}, Ireland. Free, accurate calculator based on current legislation. Get instant estimates for your redundancy pay in ${county.name}.`,
     keywords: `redundancy pay calculator, ${county.name}, Ireland, statutory redundancy, employment law, redundancy payment, ${county.province}`,
-    authors: [{ name: 'RedundancyCalc' }],
+    authors: [{ name: 'ExitPayout.com' }],
+    metadataBase: new URL('https://www.exitpayout.com'),
+    alternates: {
+      canonical: canonicalUrl,
+    },
     openGraph: {
       title: `Redundancy Pay Calculator - ${county.name}`,
       description: `Calculate your statutory redundancy payment in ${county.name}, Ireland`,
       type: 'website',
       locale: 'en_IE',
+      url: canonicalUrl,
     },
     twitter: {
       card: 'summary_large_image',

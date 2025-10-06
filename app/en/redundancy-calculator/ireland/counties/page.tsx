@@ -7,12 +7,17 @@ export const metadata: Metadata = {
   title: 'All Irish Counties - Redundancy Pay Calculator | Complete County List',
   description: 'Complete list of all 26 Irish counties with redundancy pay calculators. Find your county and calculate your statutory redundancy payment under Irish law.',
   keywords: 'Irish counties, redundancy calculator, Ireland, statutory redundancy, employment law, all counties',
-  authors: [{ name: 'RedundancyCalc' }],
+  authors: [{ name: 'ExitPayout.com' }],
+  metadataBase: new URL('https://www.exitpayout.com'),
+  alternates: {
+    canonical: 'https://www.exitpayout.com/en/redundancy-calculator/ireland/counties',
+  },
   openGraph: {
     title: 'All Irish Counties - Redundancy Pay Calculator',
     description: 'Complete list of all 26 Irish counties with redundancy pay calculators',
     type: 'website',
     locale: 'en_IE',
+    url: 'https://www.exitpayout.com/en/redundancy-calculator/ireland/counties',
   },
   robots: {
     index: true,

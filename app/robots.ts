@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: '/',
       disallow: '/private/',
     },
-    sitemap: 'https://redundancycalc.ie/sitemap.xml', // Replace with your actual domain
+    sitemap: 'https://www.exitpayout.com/sitemap.xml',
   };
 }

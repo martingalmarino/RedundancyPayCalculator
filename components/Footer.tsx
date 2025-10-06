@@ -70,9 +70,9 @@ export default function Footer() {
 
         <div className="mt-8 pt-8 border-t border-line">
           <div className="flex flex-col md:flex-row justify-between items-center">
-            <p className="text-inkMuted text-sm">
-              © 2024 RedundancyCalc. All rights reserved.
-            </p>
+                    <p className="text-inkMuted text-sm">
+                      © 2024 ExitPayout.com. All rights reserved.
+                    </p>
             <p className="text-inkMuted text-sm mt-2 md:mt-0">
               This calculator is for informational purposes only and should not be considered legal advice.
             </p>
