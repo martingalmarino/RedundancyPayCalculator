@@ -11,7 +11,7 @@ export default function Hero({ county }: HeroProps) {
       <div className="page-wrap">
         <div className="grid grid-cols-1 lg:grid-cols-5 gap-8 items-start">
           {/* Left Column - Marketing Content */}
-          <div className="lg:col-span-2 space-y-4">
+          <div className="lg:col-span-2 space-y-4 text-center lg:text-left">
             <div>
               <h1 className="heading-1 mb-3">
                 Calculate your redundancy payment
