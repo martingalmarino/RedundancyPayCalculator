@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { Calculator, TrendingUp } from 'lucide-react';
 
 export default function Footer() {
   return (
@@ -7,7 +8,24 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Brand */}
           <div>
-            <h3 className="text-lg font-semibold text-ink mb-4">RedundancyCalc</h3>
+            <div className="flex items-center space-x-2 mb-4">
+              <div className="relative">
+                <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
+                  <Calculator className="h-5 w-5 text-cta" />
+                </div>
+                <div className="absolute -top-1 -right-1 w-3 h-3 bg-success rounded-full flex items-center justify-center">
+                  <TrendingUp className="h-2 w-2 text-white" />
+                </div>
+              </div>
+              <div className="flex flex-col">
+                <span className="text-lg font-bold text-ink leading-tight">
+                  RedundancyCalc
+                </span>
+                <span className="text-xs text-inkMuted leading-tight">
+                  Ireland
+                </span>
+              </div>
+            </div>
             <p className="text-inkMuted text-sm leading-relaxed">
               Calculate your statutory redundancy payment under Irish law. 
               Get accurate estimates based on current legislation.
