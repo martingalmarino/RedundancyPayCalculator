@@ -1,5 +1,6 @@
 import Breadcrumbs from '@/components/Breadcrumbs';
 import Hero from '@/components/Hero';
+import CountiesPills from '@/components/CountiesPills';
 import FAQAccordion from '@/components/FAQAccordion';
 
 export default function Home() {
@@ -16,10 +17,17 @@ export default function Home() {
         <Breadcrumbs items={breadcrumbItems} />
       </div>
 
-      {/* Hero Section with Calculator */}
-      <Hero />
+              {/* Hero Section with Calculator */}
+              <Hero />
 
-      {/* FAQ Section */}
+              {/* Counties Section */}
+              <section className="section-spacing bg-surface">
+                <div className="page-wrap">
+                  <CountiesPills />
+                </div>
+              </section>
+
+              {/* FAQ Section */}
       <section id="faq" className="section-spacing bg-surface">
         <div className="page-wrap">
           <div className="text-center mb-12">
