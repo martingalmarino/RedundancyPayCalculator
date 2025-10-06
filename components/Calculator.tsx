@@ -4,7 +4,7 @@ import { useState } from 'react';
 import { Calculator as CalculatorIcon, CheckCircle, Info, AlertCircle } from 'lucide-react';
 import { calcRedundancyIreland } from '@/lib/calcRedundancy';
 
-export default function Calculator() {
+export default function RedundancyCalculator() {
   const [yearsOfService, setYearsOfService] = useState<number>(0);
   const [weeklyWage, setWeeklyWage] = useState<number>(0);
   const [result, setResult] = useState<any>(null);

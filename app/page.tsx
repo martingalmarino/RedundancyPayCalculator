@@ -2,7 +2,7 @@
 
 import { ArrowDown, Calculator as CalculatorIcon, Shield, Clock, Euro } from 'lucide-react';
 import Breadcrumbs from '@/components/Breadcrumbs';
-import Calculator from '@/components/Calculator';
+import RedundancyCalculator from '@/components/Calculator';
 import FAQ from '@/components/FAQ';
 import CTASection from '@/components/CTASection';
 
@@ -89,7 +89,7 @@ export default function Home() {
       {/* Calculator Section */}
       <section id="calculator" className="py-16 bg-slate-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <Calculator />
+          <RedundancyCalculator />
         </div>
       </section>
 
