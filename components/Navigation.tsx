@@ -7,12 +7,12 @@ export default function Navigation() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <nav className="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-200">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <nav className="sticky top-0 z-50 bg-surface border-b border-line h-16">
+      <div className="page-wrap">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <Link href="/" className="text-xl font-bold text-primary-800">
+            <Link href="/" className="text-xl font-bold text-primary">
               RedundancyCalc
             </Link>
           </div>
@@ -22,21 +22,15 @@ export default function Navigation() {
             <div className="ml-10 flex items-baseline space-x-8">
               <Link 
                 href="/" 
-                className="text-gray-600 hover:text-primary-800 px-3 py-2 text-sm font-medium transition-colors"
+                className="text-inkMuted hover:text-primary px-3 py-2 text-sm font-medium transition-colors"
               >
                 Home
               </Link>
               <Link 
                 href="#faq" 
-                className="text-gray-600 hover:text-primary-800 px-3 py-2 text-sm font-medium transition-colors"
+                className="text-inkMuted hover:text-primary px-3 py-2 text-sm font-medium transition-colors"
               >
                 FAQ
-              </Link>
-              <Link 
-                href="#contact" 
-                className="text-gray-600 hover:text-primary-800 px-3 py-2 text-sm font-medium transition-colors"
-              >
-                Contact
               </Link>
             </div>
           </div>
@@ -45,7 +39,7 @@ export default function Navigation() {
           <div className="md:hidden">
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="text-gray-600 hover:text-primary-800 focus:outline-none focus:text-primary-800"
+              className="text-inkMuted hover:text-primary focus:outline-none focus:text-primary"
             >
               <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 {isMenuOpen ? (
@@ -61,27 +55,20 @@ export default function Navigation() {
         {/* Mobile Navigation */}
         {isMenuOpen && (
           <div className="md:hidden">
-            <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 border-t border-gray-200">
+            <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 border-t border-line">
               <Link 
                 href="/" 
-                className="text-gray-600 hover:text-primary-800 block px-3 py-2 text-base font-medium"
+                className="text-inkMuted hover:text-primary block px-3 py-2 text-base font-medium"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Home
               </Link>
               <Link 
                 href="#faq" 
-                className="text-gray-600 hover:text-primary-800 block px-3 py-2 text-base font-medium"
+                className="text-inkMuted hover:text-primary block px-3 py-2 text-base font-medium"
                 onClick={() => setIsMenuOpen(false)}
               >
                 FAQ
-              </Link>
-              <Link 
-                href="#contact" 
-                className="text-gray-600 hover:text-primary-800 block px-3 py-2 text-base font-medium"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                Contact
               </Link>
             </div>
           </div>
