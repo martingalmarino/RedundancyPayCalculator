@@ -19,8 +19,8 @@ module.exports = {
         line: '#E5E7EB',
         surface: '#FFFFFF',
         wash: {
-          DEFAULT: '#E8F5EC',
-          deeper: '#DDF0E4',
+          DEFAULT: '#9FE870',
+          deeper: '#8FD85F',
         },
       },
       borderRadius: {

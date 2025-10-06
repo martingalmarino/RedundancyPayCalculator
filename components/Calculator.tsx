@@ -35,7 +35,7 @@ export default function RedundancyCalculator() {
   const commission = years >= 2 ? 0 : 0; // No commission for redundancy calculation
 
   return (
-    <div className="card p-6 max-w-[480px] mx-auto">
+    <div className="card p-6 w-full max-w-[600px] mx-auto">
       {/* Exchange Rate Header */}
       <div className="flex items-center space-x-2 mb-4">
         <Lock className="h-4 w-4 text-inkMuted" />
@@ -46,48 +46,51 @@ export default function RedundancyCalculator() {
         Based on Redundancy Payments Acts 1967–2014
       </div>
 
-      {/* Years of Service Input */}
-      <div className="mb-4">
-        <label className="block text-sm font-medium text-ink mb-2">
-          Years of service
-        </label>
-        <div className="relative">
-          <input
-            type="number"
-            value={yearsOfService}
-            onChange={(e) => setYearsOfService(e.target.value)}
-            className="w-full h-12 px-4 border border-line rounded-lg focus:ring-2 focus:ring-primary focus:border-primary transition-colors text-[15px]"
-            placeholder="Enter years"
-            min="0"
-            step="0.5"
-          />
-        </div>
-      </div>
-
-      {/* Weekly Wage Input */}
-      <div className="mb-4">
-        <label className="block text-sm font-medium text-ink mb-2">
-          Weekly wage
-        </label>
-        <div className="relative">
-          <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-            <span className="text-inkMuted text-sm font-medium">EUR</span>
+      {/* Input Fields - Two Column Layout */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+        {/* Years of Service Input */}
+        <div>
+          <label className="block text-sm font-medium text-ink mb-2">
+            Years of service
+          </label>
+          <div className="relative">
+            <input
+              type="number"
+              value={yearsOfService}
+              onChange={(e) => setYearsOfService(e.target.value)}
+              className="w-full h-12 px-4 border border-line rounded-lg focus:ring-2 focus:ring-primary focus:border-primary transition-colors text-[15px]"
+              placeholder="Enter years"
+              min="0"
+              step="0.5"
+            />
           </div>
-          <input
-            type="number"
-            value={weeklyWage}
-            onChange={(e) => setWeeklyWage(e.target.value)}
-            className="w-full h-12 pl-12 pr-4 border border-line rounded-lg focus:ring-2 focus:ring-primary focus:border-primary transition-colors text-[15px]"
-            placeholder="Enter weekly wage"
-            min="0"
-            step="0.01"
-          />
+        </div>
+
+        {/* Weekly Wage Input */}
+        <div>
+          <label className="block text-sm font-medium text-ink mb-2">
+            Weekly wage
+          </label>
+          <div className="relative">
+            <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+              <span className="text-inkMuted text-sm font-medium">EUR</span>
+            </div>
+            <input
+              type="number"
+              value={weeklyWage}
+              onChange={(e) => setWeeklyWage(e.target.value)}
+              className="w-full h-12 pl-12 pr-4 border border-line rounded-lg focus:ring-2 focus:ring-primary focus:border-primary transition-colors text-[15px]"
+              placeholder="Enter weekly wage"
+              min="0"
+              step="0.01"
+            />
+          </div>
         </div>
       </div>
 
       {/* Info about cap */}
       {wage > 600 && (
-        <div className="flex items-start space-x-2 mb-4 p-3 bg-wash rounded-lg">
+        <div className="flex items-start space-x-2 mb-6 p-3 bg-wash rounded-lg">
           <HelpCircle className="h-4 w-4 text-inkMuted mt-0.5 flex-shrink-0" />
           <span className="text-xs text-inkMuted">
             Weekly wage capped at €600 for statutory calculation
@@ -95,35 +98,38 @@ export default function RedundancyCalculator() {
         </div>
       )}
 
-      {/* Result */}
-      <div className="mb-4">
-        <label className="block text-sm font-medium text-ink mb-2">
-          Estimated redundancy payment
-        </label>
-        <div className="relative">
-          <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-            <span className="text-inkMuted text-sm font-medium">EUR</span>
-          </div>
-          <div className="w-full h-12 pl-12 pr-4 border border-line rounded-lg bg-wash flex items-center">
-            <span className="text-[15px] font-medium text-ink">
-              {years >= 2 ? formatCurrency(totalAmount) : 'Not eligible'}
-            </span>
+      {/* Results - Two Column Layout */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+        {/* Result */}
+        <div>
+          <label className="block text-sm font-medium text-ink mb-2">
+            Estimated redundancy payment
+          </label>
+          <div className="relative">
+            <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+              <span className="text-inkMuted text-sm font-medium">EUR</span>
+            </div>
+            <div className="w-full h-12 pl-12 pr-4 border border-line rounded-lg bg-wash flex items-center">
+              <span className="text-[15px] font-medium text-ink">
+                {years >= 2 ? formatCurrency(totalAmount) : 'Not eligible'}
+              </span>
+            </div>
           </div>
         </div>
-      </div>
 
-      {/* Eligibility Status */}
-      <div className="mb-6">
-        <label className="block text-sm font-medium text-ink mb-2">
-          Eligibility status
-        </label>
-        <div className="flex items-center space-x-2">
-          <div className={`px-3 py-1 rounded-full text-sm font-medium ${
-            years >= 2 
-              ? 'bg-green-100 text-green-800 border border-green-200' 
-              : 'bg-red-100 text-red-800 border border-red-200'
-          }`}>
-            {years >= 2 ? 'Eligible' : 'Not eligible (minimum 2 years required)'}
+        {/* Eligibility Status */}
+        <div>
+          <label className="block text-sm font-medium text-ink mb-2">
+            Eligibility status
+          </label>
+          <div className="flex items-center h-12">
+            <div className={`px-3 py-1 rounded-full text-sm font-medium ${
+              years >= 2 
+                ? 'bg-green-100 text-green-800 border border-green-200' 
+                : 'bg-red-100 text-red-800 border border-red-200'
+            }`}>
+              {years >= 2 ? 'Eligible' : 'Not eligible (minimum 2 years required)'}
+            </div>
           </div>
         </div>
       </div>
