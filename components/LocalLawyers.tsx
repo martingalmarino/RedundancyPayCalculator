@@ -94,16 +94,25 @@ export default function LocalLawyers({ countySlug }: LocalLawyersProps) {
               )}
 
               {/* Botón de consulta */}
-              <button
-                className="w-full btn-primary text-sm py-3"
-                onClick={() => {
-                  // Aquí puedes agregar lógica para manejar la solicitud de consulta
-                  // Por ejemplo, abrir un modal, redirigir a un formulario, etc.
-                  console.log(`Solicitar consulta con ${lawyer.name}`);
-                }}
-              >
-                Request Consultation
-              </button>
+              {lawyer.website ? (
+                <button
+                  className="w-full btn-primary text-sm py-3"
+                  onClick={() => {
+                    // Redirigir al sitio web del abogado para solicitar consulta
+                    window.open(lawyer.website, '_blank', 'noopener,noreferrer');
+                  }}
+                >
+                  Request Consultation
+                </button>
+              ) : (
+                <button
+                  className="w-full bg-inkMuted text-surface text-sm py-3 rounded-lg cursor-not-allowed opacity-60"
+                  disabled
+                  title="Website not available for consultation requests"
+                >
+                  Request Consultation
+                </button>
+              )}
             </div>
           ))}
         </div>
