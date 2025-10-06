@@ -103,28 +103,27 @@ export default function CountiesPage() {
         <div className="page-wrap">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="heading-2 mb-6">
-              Why Use County-Specific Calculators?
+              Why Choose a County-Specific Calculator?
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <div className="bg-surface rounded-xl p-6 shadow-card border border-line">
-                <h3 className="font-semibold text-ink mb-3">Same National Rules</h3>
+                <h3 className="font-semibold text-ink mb-3">Clear Rules, Explained Simply</h3>
                 <p className="text-inkMuted text-sm">
-                  Statutory redundancy calculations are the same across all Irish counties, 
-                  but local context helps with understanding your rights.
+                  The statutory redundancy formula is the same across Ireland — two weeks' pay for every year of service plus one extra week.
+                  Our calculators show you how it applies in your county, with plain-language explanations.
                 </p>
               </div>
               <div className="bg-surface rounded-xl p-6 shadow-card border border-line">
-                <h3 className="font-semibold text-ink mb-3">Local Relevance</h3>
+                <h3 className="font-semibold text-ink mb-3">Local Guidance and Support</h3>
                 <p className="text-inkMuted text-sm">
-                  County-specific pages help you find relevant information faster 
-                  and improve local search visibility.
+                  Employment conditions and available support services can feel different in Dublin, Cork, or rural counties.
+                  Our local pages point you toward resources and guidance relevant to where you live.
                 </p>
               </div>
               <div className="bg-surface rounded-xl p-6 shadow-card border border-line">
-                <h3 className="font-semibold text-ink mb-3">Comprehensive Coverage</h3>
+                <h3 className="font-semibold text-ink mb-3">Peace of Mind Wherever You Are</h3>
                 <p className="text-inkMuted text-sm">
-                  Whether you're in Dublin, Cork, or Donegal, get the same accurate 
-                  calculations with local context.
+                  Whether you're in Galway, Donegal, or Cork, you'll see the same accurate calculation — plus context that helps you understand your rights and next steps.
                 </p>
               </div>
             </div>
