@@ -4,7 +4,6 @@ import { ArrowDown, Calculator as CalculatorIcon, Shield, Clock, Euro } from 'lu
 import Breadcrumbs from '@/components/Breadcrumbs';
 import RedundancyCalculator from '@/components/Calculator';
 import FAQ from '@/components/FAQ';
-import CTASection from '@/components/CTASection';
 
 export default function Home() {
   const breadcrumbItems = [
@@ -100,12 +99,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-16 bg-slate-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <CTASection />
-        </div>
-      </section>
     </div>
   );
 }
