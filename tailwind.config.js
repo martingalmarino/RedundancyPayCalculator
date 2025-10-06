@@ -18,6 +18,7 @@ module.exports = {
         inkMuted: '#4B5563',
         line: '#E5E7EB',
         surface: '#FFFFFF',
+        surfaceAlt: '#F0F1EF',
         cta: '#9FE870',
         wash: {
           DEFAULT: '#9FE870',

@@ -7,7 +7,7 @@ export default function Navigation() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <nav className="sticky top-0 z-50 bg-surface border-b border-line h-16">
+    <nav className="sticky top-0 z-50 bg-surfaceAlt border-b border-line h-16">
       <div className="page-wrap">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
