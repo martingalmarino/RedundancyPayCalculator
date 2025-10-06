@@ -53,4 +53,13 @@
   .card-small {
     @apply bg-surface rounded-xl shadow-sm border border-line;
   }
+  
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
 }
