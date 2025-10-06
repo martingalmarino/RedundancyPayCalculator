@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { Calculator, CheckCircle, Info, AlertCircle } from 'lucide-react';
+import { Calculator as CalculatorIcon, CheckCircle, Info, AlertCircle } from 'lucide-react';
 import { calcRedundancyIreland } from '@/lib/calcRedundancy';
 
 export default function Calculator() {
@@ -30,7 +30,7 @@ export default function Calculator() {
       {/* Header */}
       <div className="text-center mb-8">
         <div className="inline-flex items-center justify-center w-16 h-16 bg-primary-100 rounded-full mb-4">
-          <Calculator className="h-8 w-8 text-primary-800" />
+          <CalculatorIcon className="h-8 w-8 text-primary-800" />
         </div>
         <h2 className="text-2xl font-bold text-gray-900 mb-2">
           Redundancy Pay Calculator
