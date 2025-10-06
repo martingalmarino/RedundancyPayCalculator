@@ -35,22 +35,22 @@ export default function RedundancyCalculator() {
   const commission = years >= 2 ? 0 : 0; // No commission for redundancy calculation
 
   return (
-    <div className="card p-6 w-full max-w-[600px] mx-auto">
+    <div className="card p-8 w-full max-w-[800px] mx-auto">
       {/* Exchange Rate Header */}
-      <div className="flex items-center space-x-2 mb-4">
-        <Lock className="h-4 w-4 text-inkMuted" />
-        <span className="text-sm text-inkMuted">Statutory calculation (Ireland)</span>
+      <div className="flex items-center space-x-2 mb-3">
+        <Lock className="h-5 w-5 text-inkMuted" />
+        <span className="text-base text-inkMuted">Statutory calculation (Ireland)</span>
       </div>
       
-      <div className="text-sm text-inkMuted mb-6">
+      <div className="text-base text-inkMuted mb-8">
         Based on Redundancy Payments Acts 1967–2014
       </div>
 
       {/* Input Fields - Two Column Layout */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
         {/* Years of Service Input */}
         <div>
-          <label className="block text-sm font-medium text-ink mb-2">
+          <label className="block text-base font-medium text-ink mb-3">
             Years of service
           </label>
           <div className="relative">
@@ -58,7 +58,7 @@ export default function RedundancyCalculator() {
               type="number"
               value={yearsOfService}
               onChange={(e) => setYearsOfService(e.target.value)}
-              className="w-full h-12 px-4 border border-line rounded-lg focus:ring-2 focus:ring-primary focus:border-primary transition-colors text-[15px]"
+              className="w-full h-14 px-4 border border-line rounded-lg focus:ring-2 focus:ring-primary focus:border-primary transition-colors text-base"
               placeholder="Enter years"
               min="0"
               step="0.5"
@@ -68,18 +68,18 @@ export default function RedundancyCalculator() {
 
         {/* Weekly Wage Input */}
         <div>
-          <label className="block text-sm font-medium text-ink mb-2">
+          <label className="block text-base font-medium text-ink mb-3">
             Weekly wage
           </label>
           <div className="relative">
-            <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-              <span className="text-inkMuted text-sm font-medium">EUR</span>
+            <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
+              <span className="text-inkMuted text-base font-medium">EUR</span>
             </div>
             <input
               type="number"
               value={weeklyWage}
               onChange={(e) => setWeeklyWage(e.target.value)}
-              className="w-full h-12 pl-12 pr-4 border border-line rounded-lg focus:ring-2 focus:ring-primary focus:border-primary transition-colors text-[15px]"
+              className="w-full h-14 pl-14 pr-4 border border-line rounded-lg focus:ring-2 focus:ring-primary focus:border-primary transition-colors text-base"
               placeholder="Enter weekly wage"
               min="0"
               step="0.01"
@@ -99,18 +99,18 @@ export default function RedundancyCalculator() {
       )}
 
       {/* Results - Two Column Layout */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
         {/* Result */}
         <div>
-          <label className="block text-sm font-medium text-ink mb-2">
+          <label className="block text-base font-medium text-ink mb-3">
             Estimated redundancy payment
           </label>
           <div className="relative">
-            <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-              <span className="text-inkMuted text-sm font-medium">EUR</span>
+            <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
+              <span className="text-inkMuted text-base font-medium">EUR</span>
             </div>
-            <div className="w-full h-12 pl-12 pr-4 border border-line rounded-lg bg-wash flex items-center">
-              <span className="text-[15px] font-medium text-ink">
+            <div className="w-full h-14 pl-14 pr-4 border border-line rounded-lg bg-wash flex items-center">
+              <span className="text-lg font-semibold text-ink">
                 {years >= 2 ? formatCurrency(totalAmount) : 'Not eligible'}
               </span>
             </div>
@@ -119,11 +119,11 @@ export default function RedundancyCalculator() {
 
         {/* Eligibility Status */}
         <div>
-          <label className="block text-sm font-medium text-ink mb-2">
+          <label className="block text-base font-medium text-ink mb-3">
             Eligibility status
           </label>
-          <div className="flex items-center h-12">
-            <div className={`px-3 py-1 rounded-full text-sm font-medium ${
+          <div className="flex items-center h-14">
+            <div className={`px-4 py-2 rounded-full text-base font-medium ${
               years >= 2 
                 ? 'bg-green-100 text-green-800 border border-green-200' 
                 : 'bg-red-100 text-red-800 border border-red-200'
